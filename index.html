@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bộ câu hỏi kiểm tra tự động – Present Perfect – Tiếng Anh 7 Unit 3</title>
+<style>
+  * { box-sizing: border-box; }
+  body { font-family: Arial, Helvetica, sans-serif; margin: 0; background: #f2f6f3; color: #1c2b22; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 16px; }
+  header { background: #1e6b4f; color: #fff; border-radius: 12px; padding: 20px; }
+  header h1 { margin: 0 0 6px; font-size: 22px; }
+  header p { margin: 4px 0; font-size: 14px; line-height: 1.5; }
+  .note { background: #fff7e0; border: 1px solid #e3c766; border-radius: 10px; padding: 12px 14px; margin: 14px 0; font-size: 14px; line-height: 1.55; }
+  .q { background: #fff; border: 1px solid #d8e2db; border-radius: 12px; padding: 16px; margin: 14px 0; }
+  .q h3 { margin: 0 0 10px; font-size: 16px; line-height: 1.5; }
+  .tag { display: inline-block; background: #e3efe9; color: #1e6b4f; border-radius: 20px; padding: 2px 10px; font-size: 12px; font-weight: bold; margin-bottom: 8px; }
+  .opt { display: block; border: 1px solid #cfd8d2; border-radius: 8px; padding: 10px 12px; margin: 8px 0; cursor: pointer; font-size: 15px; line-height: 1.45; }
+  .opt:hover { background: #f0f7f3; }
+  .opt input { margin-right: 8px; }
+  .opt.right { border-color: #2e9e5b; background: #e7f7ec; }
+  .opt.wrong { border-color: #d9534f; background: #fdecea; }
+  .expl { display: none; margin-top: 10px; font-size: 14px; line-height: 1.55; background: #eef4ff; border-radius: 8px; padding: 10px 12px; }
+  .expl.show { display: block; }
+  textarea { width: 100%; min-height: 90px; border: 1px solid #cfd8d2; border-radius: 8px; padding: 10px; font-size: 15px; font-family: inherit; }
+  .model { display: none; margin-top: 10px; font-size: 14px; line-height: 1.6; background: #f4efff; border-radius: 8px; padding: 10px 12px; white-space: pre-line; }
+  .model.show { display: block; }
+  .selfscore { margin-top: 10px; font-size: 14px; }
+  .selfscore input { width: 80px; padding: 6px; font-size: 15px; }
+  .bar { position: sticky; bottom: 0; background: #ffffffee; border-top: 1px solid #d8e2db; padding: 12px 0; text-align: center; }
+  button { background: #1e6b4f; color: #fff; border: 0; border-radius: 8px; padding: 12px 20px; font-size: 16px; cursor: pointer; margin: 4px; }
+  button.sec { background: #5a6f63; }
+  #result { display: none; background: #e7f7ec; border: 1px solid #2e9e5b; border-radius: 12px; padding: 16px; margin: 14px 0; font-size: 16px; line-height: 1.6; }
+  #result.show { display: block; }
+  footer { font-size: 13px; color: #55665c; text-align: center; padding: 10px 0 26px; line-height: 1.5; }
+  @media print {
+    .bar, button { display: none !important; }
+    body { background: #fff; }
+    .expl, .model { display: block !important; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Kiểm tra tự động: Thì hiện tại hoàn thành (The Present Perfect)</h1>
+    <p><strong>Môn:</strong> Tiếng Anh lớp 7 – Unit 3: Community Service (Global Success)</p>
+    <p><strong>Cấu trúc đề (10 điểm):</strong> 14 câu trắc nghiệm × 0,5 điểm = 7 điểm (máy chấm tự động) + 2 câu tự luận = 3 điểm (tự đối chiếu đáp án mẫu, rubric và tự chấm; giáo viên quyết định điểm cuối).</p>
+    <p><strong>Mức độ:</strong> Nhận biết 5 câu – Thông hiểu 5 câu – Vận dụng 3 câu trắc nghiệm + 1 câu tự luận – Vận dụng cao 1 câu trắc nghiệm + 1 câu tự luận.</p>
+  </header>
+
+  <div class="note">
+    <strong>Thông tin về bộ câu hỏi:</strong> Bộ câu hỏi này được tạo với sự hỗ trợ của trí tuệ nhân tạo tạo sinh (GenAI) theo ma trận đề do giáo viên xây dựng, và <strong>đã được giáo viên thẩm định, đối chiếu đáp án</strong> trước khi sử dụng. Trang này chạy hoàn toàn ngoại tuyến (offline), không thu thập, không gửi đi bất kỳ dữ liệu cá nhân nào. Em hãy điền họ tên và lớp vào phiếu in nếu thầy/cô yêu cầu.
+  </div>
+
+  <div id="quiz"></div>
+
+  <div class="q">
+    <span class="tag">Câu 15 – TỰ LUẬN – Vận dụng – 1,5 điểm</span>
+    <h3>Viết lại các câu sau, dùng thì hiện tại hoàn thành với <em>since</em> hoặc <em>for</em>.</h3>
+    <p>a) Mai started collecting plastic bottles two years ago. She still collects them.</p>
+    <p>b) The club began its free English classes in September. It still runs them.</p>
+    <textarea id="essay15" placeholder="Bài làm của em..."></textarea>
+    <div class="model" id="model15"></div>
+    <div class="selfscore">Tự chấm theo rubric (sau khi nộp bài sẽ hiện đáp án mẫu): <input type="number" id="score15" min="0" max="1.5" step="0.25" value="0"> / 1,5 điểm</div>
+  </div>
+
+  <div class="q">
+    <span class="tag">Câu 16 – TỰ LUẬN – Vận dụng cao – 1,5 điểm</span>
+    <h3>Viết một đoạn văn ngắn (50–70 từ, bằng tiếng Anh) về một việc tốt em đã làm cho cộng đồng, trong đó dùng ít nhất 3 câu ở thì hiện tại hoàn thành.</h3>
+    <textarea id="essay16" placeholder="Bài làm của em..."></textarea>
+    <div class="model" id="model16"></div>
+    <div class="selfscore">Tự chấm theo rubric (sau khi nộp bài sẽ hiện đáp án mẫu): <input type="number" id="score16" min="0" max="1.5" step="0.25" value="0"> / 1,5 điểm</div>
+  </div>
+
+  <div id="result"></div>
+
+  <div class="bar">
+    <button onclick="submitQuiz()">Nộp bài &amp; chấm điểm</button>
+    <button class="sec" onclick="window.print()">In / Xuất phiếu kết quả</button>
+    <button class="sec" onclick="resetQuiz()">Làm lại</button>
+  </div>
+
+  <footer>Bộ câu hỏi minh chứng cho tiểu luận cuối khóa chuyên đề THCS.62 “Trí tuệ nhân tạo trong giảng dạy số” – Bài dạy: Tiếng Anh 7, Unit 3: Community Service – Grammar: The Present Perfect.<br>Họ tên học sinh: …………………………………… &nbsp; Lớp: ………… &nbsp; Ngày làm bài: …………/…………/…………</footer>
+</div>
+
+<script>
+var QUESTIONS = [
+  { level: "Nhận biết", text: "Lan ___ just cleaned up the park with her classmates.", options: ["have", "has", "is", "does"], correct: 1, expl: "Chủ ngữ “Lan” (ngôi thứ ba số ít) dùng has + phân từ hai (cleaned)." },
+  { level: "Nhận biết", text: "The students have ___ thank-you letters to the doctors.", options: ["write", "wrote", "written", "writing"], correct: 2, expl: "Sau have phải dùng phân từ hai (V3) của write là written." },
+  { level: "Nhận biết", text: "Which sentence is in the present perfect tense?", options: ["They clean the street every week.", "He donated books yesterday.", "We are collecting old clothes now.", "She has donated books to poor children."], correct: 3, expl: "Hiện tại hoàn thành có cấu trúc have/has + V3: “has donated”." },
+  { level: "Nhận biết", text: "Have you ___ done any volunteer work?", options: ["ever", "since", "for", "from"], correct: 0, expl: "Ever dùng trong câu hỏi hiện tại hoàn thành với nghĩa “đã bao giờ… chưa”." },
+  { level: "Nhận biết", text: "___ is used before a point in time (for example: 2020, last May).", options: ["For", "Yet", "Since", "Just"], correct: 2, expl: "Since + mốc thời gian; for + khoảng thời gian." },
+  { level: "Thông hiểu", text: "I have known my volunteer team leader ___ 2022.", options: ["for", "since", "from", "at"], correct: 1, expl: "2022 là mốc thời gian nên dùng since." },
+  { level: "Thông hiểu", text: "They have volunteered at the local hospital ___ three years.", options: ["since", "at", "on", "for"], correct: 3, expl: "“Three years” là khoảng thời gian nên dùng for." },
+  { level: "Thông hiểu", text: "Choose the correct sentence.", options: ["She has just finished her homework.", "She just has finished her homework.", "She have just finished her homework.", "She has just finish her homework."], correct: 0, expl: "Cấu trúc đúng: has + just + V3 (finished); chủ ngữ “She” không dùng have." },
+  { level: "Thông hiểu", text: "He hasn't finished painting the classroom ___.", options: ["already", "just", "yet", "ever"], correct: 2, expl: "Yet dùng trong câu phủ định và câu hỏi hiện tại hoàn thành, đặt cuối câu." },
+  { level: "Thông hiểu", text: "A: Have you ever helped at a food bank? — B: Yes, I ___.", options: ["do", "have", "has", "am"], correct: 1, expl: "Câu trả lời ngắn của hiện tại hoàn thành dùng trợ động từ have/has theo chủ ngữ: I → have." },
+  { level: "Vận dụng", text: "Choose the sentence with the same meaning: “I started volunteering in 2021 and I still do it now.”", options: ["I volunteer in 2021 only.", "I have volunteer since 2021.", "I has volunteered since 2021.", "I have volunteered since 2021."], correct: 3, expl: "Hành động bắt đầu trong quá khứ, còn tiếp diễn đến hiện tại → have volunteered since 2021." },
+  { level: "Vận dụng", text: "Complete the sentence with the correct form: The volunteers ___ 100 trees along the coast.", options: ["have already planted", "has already plant", "already plants yesterday", "planting now"], correct: 0, expl: "Chủ ngữ số nhiều “The volunteers” dùng have + already + V3 (planted)." },
+  { level: "Vận dụng", text: "Tom began to teach poor children in 2020. He still teaches them now. Choose the best sentence.", options: ["Tom taught poor children in 2020 and stopped.", "Tom has teach poor children since 2020.", "Tom has taught poor children since 2020.", "Tom teaches poor children yesterday."], correct: 2, expl: "Has + V3 (taught) + since + mốc thời gian 2020 diễn tả việc còn tiếp diễn." },
+  { level: "Vận dụng cao", text: "Which sentence is correct?", options: ["We have took part in many campaigns.", "The charity has raised a lot of money since last month.", "She hasn't ever finished yet her work.", "Has he just wrote a letter to the children?"], correct: 1, expl: "Câu đúng dùng has + V3 (raised) + since + mốc thời gian. Các câu còn lại sai ở phân từ hai (taken, written) hoặc vị trí của yet." }
+];
+
+var MODELS = {
+  model15: "ĐÁP ÁN MẪU – Câu 15:\na) Mai has collected plastic bottles for two years.\nb) The club has run its free English classes since September.\nRUBRIC (1,5 điểm): mỗi câu 0,75 điểm, gồm: cấu trúc have/has + V3 đúng (0,25đ); dùng since/for đúng loại thời gian (0,25đ); giữ nguyên ý của câu gốc (0,25đ).",
+  model16: "ĐÁP ÁN MẪU – Câu 16 (tham khảo): “I love taking part in community activities. I have joined the school's volunteer club for two years. We have cleaned the beach in Long Hai three times, and we have collected a lot of plastic bottles. I have also donated my old books to poor children. I feel happy because I have done something useful for my hometown.” (66 từ)\nRUBRIC (1,5 điểm): nội dung đúng yêu cầu, đủ 50–70 từ (0,5đ); có ít nhất 3 câu hiện tại hoàn thành đúng cấu trúc (0,5đ); đoạn văn mạch lạc, từ vựng phù hợp (0,5đ)."
+};
+
+function renderQuiz() {
+  var html = "";
+  for (var i = 0; i < QUESTIONS.length; i++) {
+    var q = QUESTIONS[i];
+    html += '<div class="q" id="q' + i + '"><span class="tag">Câu ' + (i + 1) + ' – TRẮC NGHIỆM – ' + q.level + ' – 0,5 điểm</span>';
+    html += '<h3>' + q.text + '</h3>';
+    for (var j = 0; j < q.options.length; j++) {
+      html += '<label class="opt" id="opt' + i + '_' + j + '"><input type="radio" name="q' + i + '" value="' + j + '"> ' + String.fromCharCode(65 + j) + '. ' + q.options[j] + '</label>';
+    }
+    html += '<div class="expl" id="expl' + i + '"></div></div>';
+  }
+  document.getElementById('quiz').innerHTML = html;
+}
+
+function getScore(id, max) {
+  var v = parseFloat(document.getElementById(id).value);
+  if (isNaN(v)) { v = 0; }
+  if (v < 0) { v = 0; }
+  if (v > max) { v = max; }
+  return v;
+}
+
+function submitQuiz() {
+  var correctCount = 0;
+  for (var i = 0; i < QUESTIONS.length; i++) {
+    var q = QUESTIONS[i];
+    var chosen = -1;
+    var radios = document.getElementsByName('q' + i);
+    for (var r = 0; r < radios.length; r++) { if (radios[r].checked) { chosen = parseInt(radios[r].value, 10); } }
+    for (var j = 0; j < q.options.length; j++) {
+      var label = document.getElementById('opt' + i + '_' + j);
+      label.classList.remove('right'); label.classList.remove('wrong');
+      if (j === q.correct) { label.classList.add('right'); }
+      else if (j === chosen) { label.classList.add('wrong'); }
+    }
+    if (chosen === q.correct) { correctCount++; }
+    var expl = document.getElementById('expl' + i);
+    expl.classList.add('show');
+    expl.innerHTML = (chosen === q.correct ? '<strong>Đúng (+0,5đ).</strong> ' : '<strong>Chưa đúng.</strong> Đáp án đúng: ' + String.fromCharCode(65 + q.correct) + '. ') + q.expl;
+  }
+  document.getElementById('model15').textContent = MODELS.model15;
+  document.getElementById('model15').classList.add('show');
+  document.getElementById('model16').textContent = MODELS.model16;
+  document.getElementById('model16').classList.add('show');
+  var mcScore = correctCount * 0.5;
+  var essayScore = getScore('score15', 1.5) + getScore('score16', 1.5);
+  var total = mcScore + essayScore;
+  var result = document.getElementById('result');
+  result.classList.add('show');
+  result.innerHTML = '<strong>KẾT QUẢ:</strong> Trắc nghiệm đúng ' + correctCount + '/14 câu = <strong>' + mcScore.toFixed(1) + '/7 điểm</strong> (máy chấm tự động).<br>' +
+    'Tự luận (em tự chấm theo rubric): <strong>' + essayScore.toFixed(2) + '/3 điểm</strong>.<br>' +
+    '<strong>TỔNG: ' + total.toFixed(2) + ' / 10 điểm.</strong><br>' +
+    'Lưu ý: điểm tự luận do em tự đối chiếu chỉ để tham khảo; giáo viên là người thẩm định và quyết định điểm cuối cùng.';
+}
+
+function resetQuiz() {
+  renderQuiz();
+  document.getElementById('essay15').value = '';
+  document.getElementById('essay16').value = '';
+  document.getElementById('score15').value = 0;
+  document.getElementById('score16').value = 0;
+  document.getElementById('model15').classList.remove('show');
+  document.getElementById('model16').classList.remove('show');
+  var result = document.getElementById('result');
+  result.classList.remove('show');
+  result.innerHTML = '';
+  window.scrollTo(0, 0);
+}
+
+renderQuiz();
+</script>
+</body>
+</html>
